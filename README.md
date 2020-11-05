@@ -34,17 +34,17 @@ or a model configured.
 
 ### Migrations
 
-- Write a migration for the actors table. An actor should have a `first_name`
+#- Write a migration for the actors table. An actor should have a `first_name`
   and a `last_name`.
-- Write a migration for the characters table. A character should have a `name`,
+#- Write a migration for the characters table. A character should have a `name`,
   `actor_id`, and a `show_id`––a character will belong to a show (the show
   migration is already provided) and an actor, and we'll keep track of this
   relationship with these database table columns.
-- Write a migration that adds the column `catchphrase` to your character model.
+#- Write a migration that adds the column `catchphrase` to your character model.
 
 ### Associations
 
-- Associate the `Actor` model with the `Character` and `Show` model. An actor
+#- Associate the `Actor` model with the `Character` and `Show` model. An actor
   should have many characters and many shows through characters.
 - Write a method in the `Actor` class, `#full_name`, that returns the first and
   last name of an actor.
@@ -83,7 +83,7 @@ or a model configured.
   Array of the full names of each actor associated with the a show. Remember,
   a show should have many actors through characters.
 
-- While we've connected shows, characters and actors together, we haven't
+# While we've connected shows, characters and actors together, we haven't
   connected these models to the existing network model. Update the associations
   so that a show belongs to a network. In the network model, an association has
   already been added so that a network has many shows.
